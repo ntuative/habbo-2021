@@ -1,0 +1,17 @@
+{
+	"type": "app",
+	"config": "flex",
+	"mainClass": "HabboAir",
+	"additionalOptions":[
+		"-default-background-color=#000000",
+		"-omit-trace-statements=false",
+		"--incremental=true"
+	],
+	"compilerOptions": {
+		"source-path": [
+			"src/"
+		],
+		"output": "bin/Habbo.swf",
+		"optimize": true
+	}
+}

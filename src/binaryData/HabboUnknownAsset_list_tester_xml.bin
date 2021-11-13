@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="list_tester" width="240" height="245" version="0.1" uid="6158CB91-4E03-05AF-02DE-3688F102DCE6">
+  <window>
+    <frame x="0" y="0" width="240" height="245" params="98305" style="0" caption="Tester" color="0xff418db0">
+      <children>
+        <border x="0" y="0" width="228" height="213" params="2192" style="0">
+          <children>
+            <itemlist x="4" y="4" width="200" height="100" params="2064" style="0" name="_list_vertical" color="0xffffeeeeee" background="true"/>
+            <scrollbar_vertical x="206" y="4" width="18" height="100" params="2065" style="0">
+              <variables>
+                <var key="scrollable" value="_list_vertical" type="String"/>
+              </variables>
+            </scrollbar_vertical>
+            <container x="6" y="108" width="218" height="100" params="1168" style="0">
+              <children>
+                <itemlist_horizontal x="0" y="0" width="200" height="81" params="144" style="0" name="_list_horizontal" color="0xffffcceeee" background="true"/>
+                <scrollbar_horizontal x="0" y="83" width="200" height="17" params="145" style="0">
+                  <variables>
+                    <var key="scrollable" value="_list_horizontal" type="String"/>
+                  </variables>
+                </scrollbar_horizontal>
+              </children>
+            </container>
+          </children>
+        </border>
+      </children>
+    </frame>
+  </window>
+</layout>

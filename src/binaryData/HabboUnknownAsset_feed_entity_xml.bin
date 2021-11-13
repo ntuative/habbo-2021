@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="feed_entity" width="229" height="172" version="0.1" uid="8D544D98-92C3-6980-3C5C-9F4F62401926">
+  <window>
+    <border x="0" y="0" width="229" height="172" params="16528" style="3" name="item" color="0x0f9f9f9">
+      <children>
+        <bitmap x="4" y="5" width="50" height="60" params="16" style="0" name="icon">
+          <variables>
+            <var key="handle_bitmap_disposing" value="false" type="Boolean"/>
+          </variables>
+        </bitmap>
+        <itemlist_vertical x="50" y="4" width="178" height="162" params="8538256" style="0" name="content_list">
+          <children>
+            <text x="0" y="0" width="170" height="28" params="8405136" style="3" name="title" caption="001_lorem_idflgkjdl%20fkgjdf%20gdf%20gdfd%F6%20lgk%F6lkfggd%20" treshold="0" width_max="170">
+              <variables>
+                <var key="auto_size" value="left" type="String"/>
+                <var key="font_size" value="11" type="uint"/>
+                <var key="text_style" value="u_bold" type="String"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="multiline" value="true" type="Boolean"/>
+                <var key="sharpness" value="80" type="Number"/>
+                <var key="thickness" value="-15" type="Number"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+              </variables>
+            </text>
+            <text x="0" y="56" width="100" height="20" params="1168" style="0" name="time" caption="_time">
+              <variables>
+                <var key="font_size" value="9" type="uint"/>
+                <var key="text_color" value="0x999999" type="hex"/>
+                <var key="text_style" value="u_small" type="String"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="sharpness" value="80" type="Number"/>
+                <var key="thickness" value="-15" type="Number"/>
+              </variables>
+            </text>
+            <text x="0" y="54" width="168" height="40" params="8388752" style="0" name="message" caption="_multiline%20message%2C%20whoop%20whoop%20whoop%20whoop%20whoop%20whoop%20dfgdfg%20dfgdfg%20dfgdf" color="0x00" width_max="170">
+              <variables>
+                <var key="auto_size" value="left" type="String"/>
+                <var key="font_size" value="11" type="uint"/>
+                <var key="text_style" value="u_regular" type="String"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="multiline" value="true" type="Boolean"/>
+                <var key="sharpness" value="80" type="Number"/>
+                <var key="thickness" value="-15" type="Number"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+              </variables>
+            </text>
+            <bitmap x="0" y="97" width="178" height="40" params="8388624" style="0" name="decoration">
+              <variables>
+                <var key="handle_bitmap_disposing" value="false" type="Boolean"/>
+              </variables>
+            </bitmap>
+            <button x="3" y="140" width="65" height="22" params="8536081" style="3" name="action_button" caption="_button"/>
+          </children>
+          <variables>
+            <var key="spacing" value="3" type="int"/>
+          </variables>
+        </itemlist_vertical>
+      </children>
+    </border>
+  </window>
+</layout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="feed_display" width="300" height="510" version="0.1" uid="EEC889DF-88B1-AA8C-47F9-A4EB499C8731">
+  <window>
+    <container x="0" y="0" width="300" height="510" params="2112" style="0" name="notifications" background="true">
+      <children>
+        <border x="10" y="150" width="50" height="100" params="32785" style="1" name="pane_status" color="0x058544d">
+          <children>
+            <button x="1" y="2" width="29" height="21" params="131089" style="0" name="minimize_toggle" caption="%3C%3E"/>
+            <button x="1" y="24" width="37" height="21" params="131089" style="0" name="notification_feed_button" caption="_nf"/>
+            <button x="1" y="45" width="42" height="21" params="131089" style="0" name="stream_feed_button" caption="_str"/>
+          </children>
+        </border>
+        <border x="40" y="0" width="260" height="510" params="34961" style="1" name="main_view" color="0x058544d">
+          <children>
+            <region x="0" y="5" width="245" height="25" params="145" style="3" name="settings_toggle" treshold="0">
+              <children>
+                <text x="0" y="0" width="210" height="18" params="144" style="3" caption="_settings">
+                  <variables>
+                    <var key="auto_size" value="right" type="String"/>
+                    <var key="font_size" value="13" type="uint"/>
+                    <var key="text_color" value="0xffffff" type="hex"/>
+                    <var key="text_style" value="u_regular" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="sharpness" value="80" type="Number"/>
+                    <var key="thickness" value="-15" type="Number"/>
+                  </variables>
+                </text>
+              </children>
+            </region>
+            <icon x="213" y="13" width="10" height="10" params="16" style="7" name="settings_drop_icon"/>
+            <region x="200" y="470" width="48" height="25" params="1197137" style="0" name="info" treshold="0">
+              <children>
+                <button x="0" y="0" width="48" height="25" params="131089" style="3" name="info_toggle" caption="_info"/>
+              </children>
+            </region>
+            <container x="0" y="25" width="260" height="435" params="2192" style="0" name="pane_feeds">
+              <children>
+                <container x="0" y="0" width="260" height="435" params="2192" style="0" name="pane_notifications">
+                  <children>
+                    <itemlist_vertical x="6" y="0" width="235" height="435" params="2192" style="0" name="list">
+                      <children>
+                        <itemlist_vertical x="0" y="0" width="230" height="0" params="8536208" style="3" name="list_urgent">
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                        <itemlist_vertical x="0" y="0" width="230" height="0" params="8536208" style="3" name="list_actions">
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                        <itemlist_vertical x="0" y="0" width="230" height="0" params="8536208" style="3" name="list_persistent">
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                        <itemlist_vertical x="0" y="0" width="230" height="0" params="8536208" style="3" name="list_notifications">
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                      </children>
+                    </itemlist_vertical>
+                    <scrollbar_vertical x="240" y="0" width="17" height="435" params="2129" style="3" name="feed_scroll">
+                      <variables>
+                        <var key="scrollable" value="list" type="String"/>
+                      </variables>
+                    </scrollbar_vertical>
+                  </children>
+                </container>
+                <container x="0" y="0" width="260" height="435" params="2192" style="0" name="pane_stream">
+                  <children>
+                    <itemlist_vertical x="6" y="0" width="235" height="435" params="2192" style="0" name="list"/>
+                    <scrollbar_vertical x="240" y="0" width="17" height="435" params="2129" style="0">
+                      <variables>
+                        <var key="scrollable" value="list" type="String"/>
+                      </variables>
+                    </scrollbar_vertical>
+                  </children>
+                </container>
+              </children>
+            </container>
+            <container x="40" y="25" width="220" height="475" params="2192" style="0" name="pane_info" visible="false">
+              <children>
+                <border x="5" y="0" width="215" height="470" params="2192" style="0" name="page_welcome_texts" background="true">
+                  <children>
+                    <itemlist_vertical x="0" y="10" width="215" height="448" params="133264" style="0" name="welcome_list">
+                      <children>
+                        <text x="15" y="0" width="200" height="29" params="12583056" style="0" name="title" caption="_into_title" color="0x0999999" width_min="260" width_max="200">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="font_size" value="23" type="uint"/>
+                            <var key="text_color" value="0x999999" type="hex"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                          </variables>
+                        </text>
+                        <container x="0" y="29" width="194" height="20" params="8519825" style="0" name="space_ingress" height_min="20" height_max="20"/>
+                        <text x="15" y="49" width="200" height="21" params="8388752" style="0" name="ingress" caption="_info_ingress" width_min="220" width_max="200">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="font_size" value="16" type="uint"/>
+                            <var key="grid_fit_type" value="subpixel" type="String"/>
+                            <var key="text_color" value="0x222222" type="hex"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                          </variables>
+                        </text>
+                        <container x="0" y="70" width="200" height="20" params="8519825" style="0" name="space_description" height_min="20" height_max="20"/>
+                        <text x="15" y="90" width="99" height="30" params="16" style="3" name="description" caption="_info_description">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="grid_fit_type" value="subpixel" type="String"/>
+                            <var key="text_color" value="0x222222" type="hex"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                          </variables>
+                        </text>
+                        <container x="2" y="120" width="200" height="30" params="16" style="3" name="space_ok"/>
+                        <container_button x="32" y="150" width="150" height="36" params="131281" style="3" name="info_ok" color="0x0aa00" width_min="150" width_max="150">
+                          <children>
+                            <text x="0" y="4" width="150" height="24" params="12585104" style="0" name="feed_info_ok_text" caption="_info_ok" width_max="150">
+                              <variables>
+                                <var key="antialias_type" value="advanced" type="String"/>
+                                <var key="auto_size" value="center" type="String"/>
+                                <var key="font_face" value="Ubuntu" type="String"/>
+                                <var key="font_size" value="18" type="uint"/>
+                                <var key="text_color" value="0xffffff" type="hex"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="bold" value="true" type="Boolean"/>
+                              </variables>
+                            </text>
+                          </children>
+                        </container_button>
+                      </children>
+                    </itemlist_vertical>
+                  </children>
+                </border>
+              </children>
+            </container>
+            <container x="0" y="25" width="260" height="483" params="2192" style="0" name="pane_settings" visible="false">
+              <children>
+                <border x="0" y="0" width="260" height="485" params="2192" style="3" name="modal_overlay" color="0x00" blend="0.6"/>
+                <border x="0" y="0" width="260" height="220" params="144" style="3" name="item_list_border"/>
+                <itemlist_vertical x="0" y="0" width="260" height="252" params="144" style="3">
+                  <children>
+                    <container x="0" y="0" width="260" height="50" params="144" style="0" name="settings_all" tags="FRIENDS%2CME%2CHOTEL">
+                      <children>
+                        <text x="30" y="15" width="210" height="17" params="144" style="3" caption="_show_all">
+                          <variables>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="20" y="15" width="15" height="15" params="16" style="8" name="selected" tags="selected"/>
+                      </children>
+                    </container>
+                    <container x="0" y="50" width="260" height="50" params="144" style="0" name="settings_friends" tags="FRIENDS">
+                      <children>
+                        <text x="30" y="15" width="210" height="25" params="144" style="3" caption="_show_friends">
+                          <variables>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="20" y="15" width="15" height="15" params="16" style="8" name="selected" tags="selected"/>
+                      </children>
+                    </container>
+                    <container x="0" y="100" width="260" height="50" params="144" style="0" name="settings_me" tags="ME">
+                      <children>
+                        <text x="30" y="15" width="210" height="25" params="144" style="3" caption="_show_me">
+                          <variables>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="20" y="15" width="15" height="15" params="16" style="8" name="selected" tags="selected"/>
+                      </children>
+                    </container>
+                    <container x="0" y="150" width="260" height="50" params="144" style="0" name="settings_hotel" tags="HOTEL">
+                      <children>
+                        <text x="30" y="15" width="210" height="25" params="144" style="3" caption="_show_hotel">
+                          <variables>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="sharpness" value="80" type="Number"/>
+                            <var key="thickness" value="-15" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="20" y="15" width="15" height="15" params="16" style="8" name="selected" tags="selected"/>
+                      </children>
+                    </container>
+                  </children>
+                </itemlist_vertical>
+              </children>
+            </container>
+          </children>
+        </border>
+      </children>
+    </container>
+  </window>
+</layout>
