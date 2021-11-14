@@ -214,7 +214,7 @@
             _SafeStr_812 = new Vector.<IMessageDataWrapper>(0);
         }
 
-                public function send(_arg_1:IMessageComposer):Boolean
+        public function send(_arg_1:IMessageComposer):Boolean
         {
             if (disposed)
             {
@@ -257,7 +257,7 @@
             return (true);
         }
 
-                public function sendUnencrypted(_arg_1:IMessageComposer):Boolean
+        public function sendUnencrypted(_arg_1:IMessageComposer):Boolean
         {
             if (disposed)
             {

@@ -193,41 +193,11 @@
 
         private function parseArguments(_arg_1:Array):void
         {
-            var _local_2:int;
-            var _local_3:int;
-            var _local_5:String;
-            var _local_4:String;
             _SafeStr_245 = new Dictionary();
-            if (((_arg_1) && (_arg_1.length)))
-            {
-                if ((_arg_1.length % 2) != 0)
-                {
-                };
-                _local_2 = int((_arg_1.length / 2));
-                _local_3 = 0;
-                while (_local_3 < _local_2)
-                {
-                    if (((_local_3 * 2) + 1) < _arg_1.length)
-                    {
-                        _local_5 = _arg_1[(_local_3 * 2)];
-                        _local_4 = _arg_1[((_local_3 * 2) + 1)];
-                        _local_5 = _local_5.replace("-", "");
-                        if (_local_5 == "server")
-                        {
-                            _local_4 = _local_4.replace("hh", "");
-                            _local_4 = _local_4.replace("br", "pt");
-                            _local_4 = _local_4.replace("us", "en");
-                            _SafeStr_245["environment.id"] = _local_4;
-                            CommunicationUtils.writeSOLProperty("environment", _local_4);
-                        };
-                        if (_local_5 == "ticket")
-                        {
-                            _SafeStr_245["sso.token"] = _local_4;
-                        };
-                    };
-                    _local_3++;
-                };
-            };
+
+            _SafeStr_245["environment.id"] = "en";
+            _SafeStr_245["sso.token"] = stage.loaderInfo.parameters["sso.ticket"];
+
             _SafeStr_243 = true;
             tryInit();
         }

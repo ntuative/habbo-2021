@@ -38,7 +38,7 @@
         private var _ports:Array = [];
         private var _portIndex:int = -1;
         private var _SafeStr_2126:Timer = new Timer(100, 1);
-        private var _SafeStr_2127:int = 1;
+        private var _attempts:int = 1;
         private var _SafeStr_2128:String = "";
         private var _SafeStr_2129:Boolean = false;
         private var _SafeStr_2130:Boolean = false;
@@ -170,7 +170,7 @@
 
         public function renewSocket():void
         {
-            _SafeStr_2127 = 1;
+            _attempts = 1;
             _requiresInitialRetryAttempt = true;
             if (_connection != null)
             {
@@ -291,14 +291,14 @@
             _portIndex++;
             if (_portIndex >= _ports.length)
             {
-                ErrorReportStorage.addDebugData("ConnectionRetry", ("Connection attempt " + _SafeStr_2127));
-                _SafeStr_2127++;
+                ErrorReportStorage.addDebugData("ConnectionRetry", ("Connection attempt " + _attempts));
+                _attempts++;
                 _local_1 = 2;
                 if (_ports.length == 1)
                 {
                     _local_1++;
                 };
-                if (_SafeStr_2127 <= _local_1)
+                if (_attempts <= _local_1)
                 {
                     _portIndex = 0;
                 }
@@ -313,7 +313,7 @@
                     return;
                 };
             };
-            _connection.timeout = (_SafeStr_2127 * 10000);
+            _connection.timeout = (_attempts * 10000);
             _connection.init(_host, _ports[_portIndex]);
             if (_requiresInitialRetryAttempt)
             {
@@ -354,7 +354,7 @@
 
         private function onConnect(_arg_1:Event):void
         {
-            ErrorReportStorage.addDebugData("Connection", (("Connected with " + _SafeStr_2127) + " attempts"));
+            ErrorReportStorage.addDebugData("Connection", (("Connected with " + _attempts) + " attempts"));
         }
 
         private function onTryNextPort(_arg_1:TimerEvent):void
