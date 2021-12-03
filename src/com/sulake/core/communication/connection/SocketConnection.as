@@ -240,13 +240,13 @@
             {
                 _SafeStr_809.messageSent(String(_local_4));
             };
-            if (_clientToServerEncryption == null)
-            {
-                return (false);
-            };
+            // if (_clientToServerEncryption == null)
+            // {
+            //     return (false);
+            // };
             if (_SafeStr_804.connected)
             {
-                _clientToServerEncryption.encipher(_local_3);
+                // _clientToServerEncryption.encipher(_local_3);
                 _SafeStr_804.writeBytes(_local_3);
                 _SafeStr_804.flush();
             }
