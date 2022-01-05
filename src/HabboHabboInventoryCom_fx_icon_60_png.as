@@ -3,7 +3,7 @@
     import flash.display.Bitmap;
 
     [Embed(source = "/images/HabboHabboInventoryCom_fx_icon_60_png.png")]
-   public class HabboHabboInventoryCom_fx_icon_60_png extends Bitmap 
+    public class HabboHabboInventoryCom_fx_icon_60_png extends Bitmap 
     {
 
 

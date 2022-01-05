@@ -4,7 +4,7 @@
     import flash.geom.Point;
     import __AS3__.vec.Vector;
 
-   public class Canvas extends BitmapData
+    public class Canvas extends BitmapData
     {
 
         public function Canvas(_arg_1:int, _arg_2:int, _arg_3:Boolean=true, _arg_4:uint=0)

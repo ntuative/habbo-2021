@@ -2,7 +2,7 @@
 {
    import flash.utils.ByteArray;
 
-   public class _SafeStr_3
+    public class _SafeStr_3
    {
 
       private const _SafeStr_4585:uint = 0x0100;

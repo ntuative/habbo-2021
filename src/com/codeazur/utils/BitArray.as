@@ -2,7 +2,7 @@
 {
     import flash.utils.ByteArray;
 
-   public class BitArray extends ByteArray
+    public class BitArray extends ByteArray
     {
 
         protected var _SafeStr_753:uint = 0;

@@ -3,7 +3,7 @@
     import flash.display.BitmapData;
     import flash.geom.Point;
 
-   public class TrackedBitmapData extends BitmapData
+    public class TrackedBitmapData extends BitmapData
     {
 
         private static const MAX_PIXELS:int = 0xFFFFFF;

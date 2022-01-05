@@ -157,9 +157,9 @@
 
         protected function parseTagsAsyncInternal():void
         {
-            var _local_1:ITag;
+            var _local_1:ITag = parseTag(_SafeStr_750, true);
             var _local_2:int = getTimer();
-            while (((_local_1 = parseTag(_SafeStr_750, true)) && (!(_local_1.type == 0))))
+            while (_local_1.type != 0)
             {
                 if ((getTimer() - _local_2) > _SafeStr_272)
                 {

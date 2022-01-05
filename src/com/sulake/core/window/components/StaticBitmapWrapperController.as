@@ -11,7 +11,7 @@
     import com.sulake.core.assets.IAsset;
     import com.sulake.core.window.utils.PropertyStruct;
 
-   public class StaticBitmapWrapperController extends BitmapDataController implements IStaticBitmapWrapperWindow, IBitmapDataContainer, IAssetReceiver
+    public class StaticBitmapWrapperController extends BitmapDataController implements IStaticBitmapWrapperWindow, IBitmapDataContainer, IAssetReceiver
     {
 
         protected var _assetUri:String;

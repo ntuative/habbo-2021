@@ -2,7 +2,7 @@
 {
     import flash.display.Bitmap;
 
-   public class BitmapSpriteWithUserId extends Bitmap
+    public class BitmapSpriteWithUserId extends Bitmap
     {
 
         private var _userId:int;

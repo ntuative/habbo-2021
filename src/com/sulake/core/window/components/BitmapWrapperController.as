@@ -7,7 +7,7 @@
     import flash.display.BitmapData;
     import com.sulake.core.window.utils.PropertyStruct;
 
-   public class BitmapWrapperController extends BitmapDataController implements IBitmapWrapperWindow, IBitmapDataContainer
+    public class BitmapWrapperController extends BitmapDataController implements IBitmapWrapperWindow, IBitmapDataContainer
     {
 
         protected var _SafeStr_891:Boolean;

@@ -2,7 +2,7 @@
 {
    import flash.utils.ByteArray;
 
-   public class StringBuffer
+    public class StringBuffer
    {
       protected var buffer:ByteArray = new ByteArray();
       protected var backBuffer:ByteArray = new ByteArray();

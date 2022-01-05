@@ -3,7 +3,7 @@
     import flash.utils.ByteArray;
 
     [Embed(source = "/binaryData/HabboHabboHelpCom_pending_tour_request_xml.bin", mimeType = "application/octet-stream")]
-   public class HabboHabboHelpCom_pending_tour_request_xml extends ByteArray 
+    public class HabboHabboHelpCom_pending_tour_request_xml extends ByteArray 
     {
 
 
